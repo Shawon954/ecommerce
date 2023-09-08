@@ -2,7 +2,7 @@ class AppImage{
 
   static const String Splashimage = 'assets/splashlogo/logo.svg';
 
-  static const String Bottomnavbaricon = 'assets/bottom_nav_icon/';
+  static const String Bottomnavbaricon = 'assets/bottom_nav_icon';
 
   static const String outlinebottomnavbarhomeicon = '${Bottomnavbaricon}/home.png';
   static const String outlinebottomnavbarcategoryicon = '${Bottomnavbaricon}/category.png';

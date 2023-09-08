@@ -1,8 +1,12 @@
+import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
+import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:ostad_ecommerce/app/utility/app_image/app_image.dart';
-import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
+import 'package:ostad_ecommerce/app/utility/app_string/app_string.dart';
+import 'package:ostad_ecommerce/app/utility/app_textstyle/app_style.dart';
+
 
 import '../controllers/buttomnavbar_controller.dart';
 
@@ -14,54 +18,52 @@ class ButtomnavbarView extends GetView<ButtomnavbarController> {
 
   @override
   Widget build(BuildContext context) {
+    return GetBuilder<ButtomnavbarController>(builder: (controller) {
+      return Scaffold(
+        bottomNavigationBar: BottomNavigationBar(
 
+          currentIndex: controller.CurrentIndex,
+          backgroundColor: Colors.grey.shade400,
+          onTap: controller.TabChange,
+          unselectedFontSize: 15,
+          unselectedItemColor: Colors.grey,
+          selectedFontSize: 15,
+          selectedLabelStyle: AppTextStyle().TextSize14_400_ambar,
+          selectedItemColor: Colors.orange,
+          iconSize: 30,
+          items: [
+            BottomNavigationBarItem(
+              backgroundColor: Colors.white,
 
-    return GetBuilder<ButtomnavbarController>(
-        builder: (controller){
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarhomeicon,),size: 30,
+                ),
+              label: 'Home',
+            ),BottomNavigationBarItem(
+              backgroundColor: Colors.white,
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarcategoryicon),size: 30
+               ),
+              label: 'Categorye',
+            ),BottomNavigationBarItem(
+              backgroundColor: Colors.white,
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarshoppingcarticon),size: 30
+                ),
+              label: 'Cart',
+            ),BottomNavigationBarItem(
+              backgroundColor: Colors.white,
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarhgiftboxicon),size: 30
+              ),
+              label: 'Wish',
 
-          return Scaffold(
-            body: IndexedStack(
-              index: controller.CurrentIndex,
-              children: [
-
-              ],
             ),
-          );
-        }
-
-
-    );
-
+          ],
+        ),
+        body: IndexedStack(
+          index: controller.CurrentIndex,
+          children: [],
+        ),
+      );
+    });
   }
 
-  Widget _BottomNavBar() {
-    return WaterDropNavBar(
-      selectedIndex: controller.CurrentIndex,
-      onItemSelected: (int index) {
-        controller.CurrentIndex = index;
-      },
-      barItems: <BarItem>[
-        BarItem(
-          Text: "Home",
-          fillImage: Image.asset(AppImage.fillbottomnavbarhomeicon,scale: 1.2,),
-          outlineImage: Image.asset(AppImage.outlinebottomnavbarhomeicon,scale: 1.2,),
-        ),
-        BarItem(
-          Text: "Categorys",
-          fillImage:Image.asset(AppImage.fillbottomnavbarcategoryicon,scale: 1.2,),
-          outlineImage: Image.asset(AppImage.outlinebottomnavbarcategoryicon,scale: 1.2,),
-        ),
-        BarItem(
-          Text: "Cart",
-          fillImage: Image.asset(AppImage.fillbottomnavbarshoppingcarticon,scale: 1.2,),
-          outlineImage: Image.asset(AppImage.outlinebottomnavbarshoppingcarticon,scale: 1.2,),
-        ),
-        BarItem(
-          Text: "Wish",
-          fillImage: Image.asset(AppImage.fillbottomnavbarhgiftboxicon,scale: 1.2,),
-          outlineImage:Image.asset(AppImage.outlinebottomnavbarhgiftboxicon,scale: 1.2,),
-        ),
-      ],
-    );
-  }
+
 }

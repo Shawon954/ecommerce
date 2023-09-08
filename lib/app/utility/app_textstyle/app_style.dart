@@ -17,4 +17,9 @@ class AppTextStyle {
   TextStyle TextSize16_500_blue = GoogleFonts.inter(fontSize: 16, fontWeight: FontWeight.w500, color: AppColors.blueColor);
   TextStyle TextSize14_400_blue = GoogleFonts.inter(fontSize: 14, fontWeight: FontWeight.w400, color: AppColors.blueColor);
   TextStyle TextSize12_300_blue = GoogleFonts.inter(fontSize: 12, fontWeight: FontWeight.w300, color: AppColors.blueColor);
+
+  TextStyle TextSize18_bold_ambar = GoogleFonts.inter(fontSize: 18, fontWeight: FontWeight.bold, color: AppColors.ambrColor);
+  TextStyle TextSize16_500_ambar = GoogleFonts.inter(fontSize: 16, fontWeight: FontWeight.w500, color: AppColors.ambrColor);
+  TextStyle TextSize14_400_ambar = GoogleFonts.inter(fontSize: 14, fontWeight: FontWeight.w400, color: AppColors.ambrColor);
+  TextStyle TextSize12_300_ambar = GoogleFonts.inter(fontSize: 12, fontWeight: FontWeight.w300, color: AppColors.ambrColor);
 }
