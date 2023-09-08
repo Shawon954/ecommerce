@@ -5,10 +5,12 @@ abstract class Routes {
   Routes._();
   static const splashscreen = _Paths.splashscreen;
   static const buttomnavbar = _Paths.buttomnavbar;
+  static const homepage = _Paths.homepage;
 }
 
 abstract class _Paths {
   _Paths._();
   static const splashscreen = '/splashscreen';
   static const buttomnavbar = '/buttomnavbar';
+  static const homepage = '/homepage';
 }
