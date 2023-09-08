@@ -3,6 +3,7 @@ import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:ostad_ecommerce/app/utility/app_colors/app_colors.dart';
 import 'package:ostad_ecommerce/app/utility/app_image/app_image.dart';
 import 'package:ostad_ecommerce/app/utility/app_string/app_string.dart';
 import 'package:ostad_ecommerce/app/utility/app_textstyle/app_style.dart';
@@ -23,7 +24,7 @@ class ButtomnavbarView extends GetView<ButtomnavbarController> {
         bottomNavigationBar: BottomNavigationBar(
 
           currentIndex: controller.CurrentIndex,
-          backgroundColor: Colors.grey.shade400,
+
           onTap: controller.TabChange,
           unselectedFontSize: 15,
           unselectedItemColor: Colors.grey,
@@ -33,24 +34,24 @@ class ButtomnavbarView extends GetView<ButtomnavbarController> {
           iconSize: 30,
           items: [
             BottomNavigationBarItem(
-              backgroundColor: Colors.white,
+              backgroundColor: AppColors.NavbarColor,
 
-              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarhomeicon,),size: 30,
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarhomeicon,),size: 25,
                 ),
               label: 'Home',
             ),BottomNavigationBarItem(
-              backgroundColor: Colors.white,
-              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarcategoryicon),size: 30
+              backgroundColor: AppColors.NavbarColor,
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarcategoryicon),size: 25
                ),
               label: 'Categorye',
             ),BottomNavigationBarItem(
-              backgroundColor: Colors.white,
-              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarshoppingcarticon),size: 30
+              backgroundColor: AppColors.NavbarColor,
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarshoppingcarticon),size: 25
                 ),
               label: 'Cart',
             ),BottomNavigationBarItem(
-              backgroundColor: Colors.white,
-              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarhgiftboxicon),size: 30
+              backgroundColor: AppColors.NavbarColor,
+              icon: ImageIcon(AssetImage(AppImage.outlinebottomnavbarhgiftboxicon),size: 25
               ),
               label: 'Wish',
 
