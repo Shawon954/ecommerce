@@ -6,6 +6,7 @@ abstract class Routes {
   static const splashscreen = _Paths.splashscreen;
   static const buttomnavbar = _Paths.buttomnavbar;
   static const homepage = _Paths.homepage;
+  static const categorye = _Paths.categorye;
 }
 
 abstract class _Paths {
@@ -13,4 +14,5 @@ abstract class _Paths {
   static const splashscreen = '/splashscreen';
   static const buttomnavbar = '/buttomnavbar';
   static const homepage = '/homepage';
+  static const categorye = '/categorye';
 }

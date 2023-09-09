@@ -9,6 +9,7 @@ import 'package:ostad_ecommerce/app/utility/app_string/app_string.dart';
 import 'package:ostad_ecommerce/app/utility/app_textstyle/app_style.dart';
 
 
+import '../../homepage/views/homepage_view.dart';
 import '../controllers/buttomnavbar_controller.dart';
 
 class ButtomnavbarView extends GetView<ButtomnavbarController> {
@@ -60,7 +61,10 @@ class ButtomnavbarView extends GetView<ButtomnavbarController> {
         ),
         body: IndexedStack(
           index: controller.CurrentIndex,
-          children: [],
+          children: [
+            HomepageView(),
+
+          ],
         ),
       );
     });
