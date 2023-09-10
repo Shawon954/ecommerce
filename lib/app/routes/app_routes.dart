@@ -7,6 +7,8 @@ abstract class Routes {
   static const buttomnavbar = _Paths.buttomnavbar;
   static const homepage = _Paths.homepage;
   static const categorye = _Paths.categorye;
+  static const cart = _Paths.cart;
+  static const wish = _Paths.wish;
 }
 
 abstract class _Paths {
@@ -15,4 +17,6 @@ abstract class _Paths {
   static const buttomnavbar = '/buttomnavbar';
   static const homepage = '/homepage';
   static const categorye = '/categorye';
+  static const cart = '/cart';
+  static const wish = '/wish';
 }

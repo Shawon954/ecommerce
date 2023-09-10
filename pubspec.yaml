@@ -41,6 +41,8 @@ dependencies:
   google_fonts: ^5.1.0
   flutter_svg: ^2.0.7
   curved_labeled_navigation_bar: ^2.0.2
+  # notification
+  badges: ^3.1.2
 
 
 dev_dependencies:
@@ -69,6 +71,7 @@ flutter:
   assets:
      - assets/splashlogo/
      - assets/bottom_nav_icon/
+     - assets/appbarimage/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,6 +1,15 @@
 class AppImage{
 
   static const String Splashimage = 'assets/splashlogo/logo.svg';
+  static const String appbarimage = 'assets/appbarimage';
+  static const String appbarimagesvg = 'assets/appbarimage/logo_nav.svg';
+  static const String appbarimagelogo = '${appbarimage}/appbar_logo.png';
+  static const String appbarimageuser = '${appbarimage}/user.png';
+  static const String appbarimagecall = '${appbarimage}/telephone.png';
+
+
+
+
 
   static const String Bottomnavbaricon = 'assets/bottom_nav_icon';
 
@@ -9,10 +18,7 @@ class AppImage{
   static const String outlinebottomnavbarshoppingcarticon = '${Bottomnavbaricon}/shopping-cart.png';
   static const String outlinebottomnavbarhgiftboxicon = '${Bottomnavbaricon}/gift-box.png';
 
-  static const String fillbottomnavbarhomeicon = '${Bottomnavbaricon}/homefill.png';
-  static const String fillbottomnavbarcategoryicon = '${Bottomnavbaricon}/categoryfill.png';
-  static const String fillbottomnavbarshoppingcarticon = '${Bottomnavbaricon}/shoppingfill.png';
-  static const String fillbottomnavbarhgiftboxicon = '${Bottomnavbaricon}/giftboxfill.png';
+
 
 
 }
